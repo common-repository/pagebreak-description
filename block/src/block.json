@@ -1,0 +1,42 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "pagebreak-description/pagebreakdescription",
+  "title": "Page breaks and before/after descriptions",
+  "category": "design",
+  "icon": "admin-comments",
+  "description": "Enter page breaks and before/after descriptions. Values are used in pagination. Do not mix this block with the Page Break block, as it may cause the comment to be misaligned.",
+  "keywords": [
+    "next page",
+    "prev page",
+    "pagebreak",
+    "pagination"
+  ],
+  "version": "1.0.0",
+  "textdomain": "pagebreak-description",
+  "attributes": {
+    "thisdesc": {
+      "type": "string"
+	},
+    "nextdesc": {
+      "type": "string"
+    },
+    "preview": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "supports": {
+    "customClassName": false,
+    "className": false,
+    "html": false
+  },
+  "example": {
+    "attributes": {
+      "preview": true
+    }
+  },
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css"
+}

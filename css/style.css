@@ -1,0 +1,69 @@
+/* pagination */
+.pagebreak-description-next-page-link {
+  display: flex;
+  justify-content: center;
+}
+.pagebreak-description-pagination {
+  display: block;
+  text-align: center;
+  -webkit-touch-callout: none;
+  user-select: none;
+  -webkit-user-select: none;
+}
+.post-page-numbers {
+  display: inline-block;
+  padding: 1rem 1.5rem;
+  margin: 0.5rem;
+  border-radius: 10%;
+  background: #f2f2f2;
+  color: #2589d0;
+  text-decoration: none;
+}
+.current {
+  color: #ffffff;
+  background: #2589d0;
+  font-weight: bold;
+}
+.pagebreak-description-for-over {
+  text-align: center;
+  color: #999999;
+  font-size: 0.8rem;
+  line-height: 0.1rem;
+}
+
+/* tooltip */
+.cp_tooltip_description {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+.cp_tooltip_description .cp_tooltip_description_text {
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  right: 0;
+  visibility: hidden;
+  width: 100px;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  padding: 0.3em 0.5em;
+  transition: opacity 1s;
+  text-align: left;
+  opacity: 0;
+  color: #ffffff;
+  border-radius: 6px;
+  background-color: #da3c41;
+}
+.cp_tooltip_description .cp_tooltip_description_text::after {
+  position: absolute;
+  bottom: 100%;
+  right: 7%;
+  margin-left: -5px;
+  content: ' ';
+  border: 5px solid transparent;
+  border-bottom-color: #da3c41;
+}
+.cp_tooltip_description:hover .cp_tooltip_description_text {
+  visibility: visible;
+  opacity: 1;
+}
